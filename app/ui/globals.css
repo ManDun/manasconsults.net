@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply text-[#1f2937] tracking-wide
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+
+  p {
+    @apply text-lg  md:text-xl
+  }
+  
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply drop-shadow-lg shadow-gray-400 rounded-md uppercase bg-gradient-to-r from-[#276778] to-[#4596a8] text-white
+  }
+
+  .nav-bg {
+    @apply bg-gradient-to-r from-[#d8e8ec] to-[#e6ebec] text-[#1f2937] tracking-wide
+  }
+
+  .main-bg {
+    @apply bg-gradient-to-b from-[#b6e3ec] to-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .about-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .skills-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .projects-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .contact-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
+  }
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
